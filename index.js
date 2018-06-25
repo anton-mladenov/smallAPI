@@ -4,8 +4,8 @@ const Sequelize = require("sequelize")
 const sequelize = new Sequelize("postgres://postgres:secret@localhost:5432/postgres")
 const bodyParser = require("body-parser")
 
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended:false}));
+// app.use(bodyParser.json());
 
 var Jobs = sequelize.define("jobs", {
 	id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
